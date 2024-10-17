@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import Markdown from "react-markdown";
 import "../app/privacy-policy/markdown.css";
 import { ChevronLeft, LoaderCircleIcon } from "lucide-react";
+import Link from 'next/link';
 
 export default async function ThemePage({ themeID }: { themeID: string }) {
 	const theme = await getThemeFromId(themeID);
@@ -20,13 +21,12 @@ export default async function ThemePage({ themeID }: { themeID: string }) {
 		<div className="relative mx-auto mt-24 flex flex-col items-start lg:mt-56 lg:flex-row">
 			<div className="w-md relative mx-auto mr-5 flex h-full w-full flex-col rounded-lg border bg-surface p-5 shadow md:mx-0 md:max-w-sm lg:sticky lg:top-0">
 				<div className="mb-2 flex w-full items-center justify-between">
-					<a
-						className="flex cursor-pointer items-center opacity-70"
-						href="/mods"
-					>
-						<ChevronLeft className="mr-1 h-4 w-4" />
-						<h3 className="text-md">Go back</h3>
-					</a>
+					<Link href="/mods" passHref>
+						<a className="flex cursor-pointer items-center opacity-70">
+							<ChevronLeft className="mr-1 h-4 w-4" />
+							<h3 className="text-md">Go back</h3>
+						</a>
+					</Link>
 					{theme.homepage && (
 						<a
 							href={theme.homepage}
