@@ -3932,7 +3932,7 @@
     ],
     "features": [
       "Updated to Firefox 150.0.1",
-      "Added an space-only search mode for the urlbar, which can be enabled by typing '` + space' in the urlbar."
+      "Added a space-only search mode for the urlbar, which can be enabled by typing ` + space in the urlbar."
     ],
     "security": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-35/",
     "workflowId": 25126816496,
