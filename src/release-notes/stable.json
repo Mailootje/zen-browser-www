@@ -3911,5 +3911,32 @@
     "workflowId": 24983103164,
     "image": false,
     "date": "27/04/2026"
+  },
+  {
+    "version": "1.19.11b",
+    "extra": "",
+    "fixes": [
+      {
+        "description": "Fixed topbar dropping down when titlebar is enabled",
+        "issue": 7094
+      },
+      {
+        "description": "Fixed auto hide not working after installing an extension",
+        "issue": 13488
+      },
+      {
+        "description": "Fixed dragging folders around not working properly",
+        "issue": 13492
+      },
+      "Other minor bug fixes and performance improvements."
+    ],
+    "features": [
+      "Updated to Firefox 150.0.1",
+      "Added an space-only search mode for the urlbar, which can be enabled by typing '` + space' in the urlbar."
+    ],
+    "security": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-35/",
+    "workflowId": 25126816496,
+    "image": false,
+    "date": "29/04/2026"
   }
 ]
